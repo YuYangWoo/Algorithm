@@ -8,12 +8,8 @@ double solution(vector<int> arr) {
 	for (int i = 0; i < arr.size(); i++) {
 		answer += arr[i];
 		if (i + 1 == arr.size()) {
-			answer = (answer / i + 1);
+			answer = (answer / (i + 1));
 		}
 	}
 	return answer;
-}
-int main() {
-	vector<int> a{ 1,2,3,4 };
-	solution(a);
 }

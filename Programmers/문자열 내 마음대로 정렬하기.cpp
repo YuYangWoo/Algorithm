@@ -25,7 +25,3 @@ vector<string> solution(vector<string> strings, int n) {
 	}
 	return answer;
 }
-int main() {
-	vector<string> a{ "abce", "abcd", "cdx" };
-	solution(a,1);
-}

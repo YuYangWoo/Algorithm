@@ -15,7 +15,3 @@ vector<int> solution(vector<int> arr)
 	}
 	return answer;
 }
-int main() {
-	vector<int> a{ 4,3 };
-	solution(a);
-}
