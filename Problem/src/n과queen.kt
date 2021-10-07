@@ -1,0 +1,2 @@
+class n과queen {
+}
