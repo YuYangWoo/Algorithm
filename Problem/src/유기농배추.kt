@@ -1,6 +1,6 @@
 import java.util.*
-var dX = intArrayOf(1, 0, -1, 0)
-var dY = intArrayOf(0, 1, 0, -1)
+//var dX = intArrayOf(1, 0, -1, 0)
+//var dY = intArrayOf(0, 1, 0, -1)
 lateinit var checkArrrr: Array<Array<Boolean>>
 
 fun main() {
