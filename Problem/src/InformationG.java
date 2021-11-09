@@ -4,6 +4,8 @@ public class InformationG {
       for(int n = 7; n>=0; n--){
           System.out.printf("%d", a[n]);
       }
+      long num = 5;
+
     }
 
 
