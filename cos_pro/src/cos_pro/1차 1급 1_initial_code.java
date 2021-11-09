@@ -1,4 +1,4 @@
-package java;// You may use import as below.
+package cos_pro;// You may use import as below.
 //import java.util.*;
 
 class Solution1 {
