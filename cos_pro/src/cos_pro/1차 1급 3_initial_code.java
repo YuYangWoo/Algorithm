@@ -1,4 +1,9 @@
 package cos_pro;// You may use import as below.
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
 //import java.util.*;
 class Solution3 {
     int[] nightX = {2,1,-1,-2,-2,-1,1,2};
@@ -16,7 +21,10 @@ class Solution3 {
                 answer++;
             }
         }
-        System.out.print("x는" + x + "y는" + y);
+        String a = "abc";
+        String b= "bca";
+        int ans = a.indexOf(b.charAt(0));
+        System.out.print("answ" + ans);
         return answer;
     }
 

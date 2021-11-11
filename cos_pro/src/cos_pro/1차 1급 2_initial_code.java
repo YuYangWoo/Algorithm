@@ -18,10 +18,10 @@ class Solution2 {
             }
         }
         for(int i = 1; i<=n*n; i++) {
-            int icx = cx + dx[cur_dir];
-            int icy = cy + dy[cur_dir];
+            int ix = cx + dx[cur_dir];
+            int iy = cy + dy[cur_dir];
             arr[cx][cy] = i;
-            if(arr[icx][icy] == 1) {
+            if(arr[ix][iy] != 0) {
                 cur_dir = (cur_dir+1)%4;
             }
             cx = cx + dx[cur_dir];
@@ -32,7 +32,9 @@ class Solution2 {
                 if(i == j) {
                     answer+= arr[i][j];
                 }
+                System.out.print(arr[i][j]);
             }
+            System.out.println();
         }
         return answer;
     }
@@ -40,7 +42,7 @@ class Solution2 {
     // The following is main method to output testcase.
     public static void main(String[] args) {
         Solution2 sol = new Solution2();
-        int n1 = 3;
+        int n1 = 6;
         int ret1 = sol.solution(n1);
 
         int z = 3;
