@@ -37,6 +37,7 @@ class que1 {
         String[] words = {new String("nice"), new String("happy"), new String("hello"), new String("world"), new String("hi"), new String("abcdefg"), new String("asdfsda"), new String("ab")};
         int ret = sol.solution(K, words);
 
+        Queue<Integer> queue = new LinkedList();
         // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
         System.out.println("solution 메소의 반환 값은 " + ret + " 입니다.");
     }

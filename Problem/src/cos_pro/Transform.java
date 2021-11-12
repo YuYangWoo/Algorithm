@@ -44,5 +44,54 @@ public class Transform {
         char b = 'a';
         System.out.println((int)b);
         String.valueOf(b);
+        int df = 9;
+        long asd = (long)df;
+        aera();
+        check = new boolean[5];
+        answer = new int[3];
+        combination(0,0);
+    }
+    public int gcd(int a, int b) {
+        while(b>0) {
+            int tmp = b;
+            b=a%b;
+            a=tmp;
+        }
+        return a;
+    }
+    public static void aera() {
+        boolean[] prime = new boolean[30];
+        prime[0]=prime[1] = true;
+        for(int i =2; i*i<prime.length;i++) {
+            if(!prime[i]) {
+                for(int j = i*i; j< prime.length;j+=i) {
+                    prime[j] = true;
+                }
+            }
+        }
+        for(int i = 0; i< prime.length;i++) {
+            if(!prime[i]) System.out.println(i);
+        }
+    }
+    static boolean[] check ;
+    static int[] answer;
+    public static void combination(int index, int start) {
+        int[] select = {1,2,3,3,5};
+
+        if(index == 3 ){
+            for(int i =0; i<answer.length;i++) {
+                System.out.print(answer[i]);
+            }
+            System.out.println();
+
+            return;
+        }
+        for(int i =start; i<select.length;i++) {
+            if(check[i]) continue;
+            answer[index] = select[i];
+            check[i] = true;
+            combination(index +1, i);
+            check[i] = false;
+        }
     }
 }
