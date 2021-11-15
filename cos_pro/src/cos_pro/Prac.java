@@ -1,6 +1,6 @@
 package cos_pro;
 
-import java.util.Locale;
+import java.util.*;
 
 public class Prac {
     public static void main(String[] args) {
@@ -63,5 +63,17 @@ public class Prac {
         double number = 13.7896;
         String answer = String.format("%.3f", number);
         System.out.println(answer);
+        int[] intArr = {1,2,1,3,4,5,6};
+        Arrays.sort(intArr);
+        Arrays.stream(intArr).distinct();
+        for(int i =0; i< intArr.length;i++)  {
+            System.out.print(intArr[i]);
+        }
+        int[] a = {1,2,3,4};
+        System.out.print(Integer.toBinaryString(a[0]));
+        Iterator<Integer> itera1tor = Arrays.stream(a).iterator();
+        while(itera1tor.hasNext()){
+            Integer b = itera1tor.next();
+        }
     }
 }
