@@ -3,15 +3,24 @@ fun main() {
     //abcdefghijklmnopqrstuvwxyz
     var sb = StringBuilder()
     //65 91 98
-    for(i in input.indices) {
-        if(input[i] in 'a'..'z' ) {
-            if((input[i]+13).toString().toInt()>122 )
-            sb.append(input[i]+13)
-        } else if(input[i] in 'A'..'Z'){
-
-        }
-        else if(input[i] == ' ') {
-            sb.append(' ')
+   //abcdefghijklmnopqrstuvwxyz
+    for(value in input) {
+        when (value) {
+            in 'a'..'m' -> {
+                sb.append(value+13)
+            }
+            in 'n'..'z' -> {
+                sb.append(value-13)
+            }
+            in 'A'..'M' -> {
+                sb.append(value+13)
+            }
+            in 'N'..'Z' -> {
+                sb.append(value-13)
+            }
+            else -> {
+                sb.append(value)
+            }
         }
     }
     sb.toString().forEach { print(it) }
