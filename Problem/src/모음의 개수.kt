@@ -1,17 +1,10 @@
-
 fun main() {
-//    while (true) {
-//        var input = readLine()
-//        if(input == "#") {
-//            break
-//        }
-//        println(input!!.count { it in "aeiou" || it in "AEIOU" })
-//    }
-
-    var abc = "abc"
-    for(i in abc.indices) {
-        if(abc[i] in 'a'..'z') {
-            print("빠끄")
+    val input = readLine()!!
+    var count = 0
+    for(value in input) {
+        if(value == 'a' || value == 'e' || value == 'i' || value == 'o' || value == 'u') {
+            count++
         }
     }
+    print(count)
 }
