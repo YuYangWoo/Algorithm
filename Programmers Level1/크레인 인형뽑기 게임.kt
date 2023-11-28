@@ -1,5 +1,7 @@
 import java.util.*
+class main() {
 
+}
 fun main() {
     solution(arrayOf(
         intArrayOf(0,0,0,0,0),
